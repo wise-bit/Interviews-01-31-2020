@@ -5,7 +5,7 @@
 NodeJS 10.x, x > 10
 NPM
 ```
-2. Fork the following repository: https://github.com/AES-Outreach/Outreach-Interviews.git to your working station and open the project in your favourite TypeScript editor. I recommend that you use [Visual Studio Code](https://code.visualstudio.com/download) in order to start working on the project
+2. Fork the following repository: https://github.com/AES-Outreach/Outreach-Interviews-01-31-2020.git to your working station and open the project in your favourite TypeScript editor. I recommend that you use [Visual Studio Code](https://code.visualstudio.com/download) in order to start working on the project
 3. Go to https://api.nasa.gov/ and get an api key. Note: for each API key there is a 1000 request per hour limit applied across all api.nasa.gov API requests, make sure not to exceed this when testing your code.
 4. Go to the Outreach-Interviews\candidate-questions\client-questions\src\nasa\keys file and insert your key as a string. Make sure changes on this file are **ABSOLUTELY NOT** commited to keep your api key private
 
