@@ -10,8 +10,8 @@ NPM
 4. Go to the Outreach-Interviews\candidate-questions\client-questions\src\nasa\keys file and insert your key as a string. Make sure changes on this file are **ABSOLUTELY NOT** commited to keep your api key private
 
 # Programming Question
-- Under the src\nasa folder of the project, you will see that there is a class called DailyImage that allows users to get the Astronomy Picture Of The Day info from the Nasa api. 
-- In the src\index.ts file, you will see that a get endpoint has been setup for /daily, that allows the user to get the daily image by using the DailyImage class.
+- Under the Nasa-Test\src\nasa folder of the project, you will see that there is a class called DailyImage that allows users to get the Astronomy Picture Of The Day info from the Nasa api. 
+- In the Nasa-Test\src\index.ts file, you will see that a get endpoint has been setup for /daily, that allows the user to get the daily image by using the DailyImage class.
 - Using a similar project structure create a new endpoint /timeline that accepts a GET request with a dates parameter (You may use any existing methods in your implementation. )
 - For each of the dates in the parameter, fetch the Astronomy Picture Of The Day from the nasa daily image api. You will then need to order this list chronologically with the most recent picture first.
 
@@ -51,7 +51,7 @@ npm run test
 # Passing Criteria & Submitting
 
 * Keep code strongly typed with good coding practices, and use the await/async model when performing `Promises` within TypeScript
-* Document all of your functions with statement blocks using the @param and @returns annotations, and add 2 tests for every function written, one that expects to pass and one that expects to fail. Your tests should go in the tests\nasa\nasa-test.ts file
+* Document all of your functions with statement blocks using the @param and @returns annotations, and add 2 tests for every function written, one that expects to pass and one that expects to fail. Your tests should go in the Nasa-Test\tests\nasa\nasa-test.ts file
 * Once you are done, commit your solution to a branch in the GitHub repository with the branch name in the following format: student number-name (i.e.: 123456-first-last) and make a pull request. You have until Jan 31st, 6pm to submit your interview. 
 
 
