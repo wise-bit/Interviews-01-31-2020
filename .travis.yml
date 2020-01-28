@@ -1,0 +1,26 @@
+dist: xenial
+branches:
+  only:
+  - master
+  - develop
+language: node_js
+node_js: '10'
+cache:
+  directories:
+  - node_modules
+jobs:
+  include:
+  - script:
+    - npm install && npm run lint && npm run build && npm run test
+    name: Build Outreach-Interviews
+stages:
+- test
+notifications:
+  slack:
+    secure: xhuIPz8DpmBhgivWajgpB0crqv67ltbihIaFuW0lPOVHp5L7kmd/pwE1yS4ncR7dNrh622yaxEKuLsGL4zX2Va1JbcifDy9VxRajErVmZiGUEedblddSZACE7DdVAk0xmvNQxdmPeCKggx0MeErvSOeW9GzqmLAWPXHn9Fo1j4VZ8+xXVlQnNcMvVzARtKB5ndwsJOKH/MGM71MD6ZpfaV2lrVISMuJyKAl6btWdwuGS6WhjwK5b4vv7FGHw19lRJwQiJQcOiEnIlnjKU4Alg1x+j7aOk66vBwO2DBc/+fs2fAFr1fD1Huie/3poXiHELJRf3P5vMAeYzoWJ0bVDOvJMduGQeQBTarJYvN647O4lOz/q0Ehe7hxcKAuPrYSeIOjt7ejTX+Mcx2B6dEqZMDX530l14LBlakNlJ64os+Df8YmD5T3Ea2OkueUuoX/xq9fZK+KyxIN1G34I8RHw3bf5npomS6xyyzY8lOpgWgm//zr3Geu79RUZAVWL6luV8uPJvlj5qiyZz+GUggXzclxpSVbzhfDw9bvZl07kztpDRb3UDtX3HgIiU6dIZ6WjNUrqMfovVADO+3tk/2cMwS8oL5yiu7U409oKM/C15P2HckVbUSiDzxjt6N/CG6a/pcthwDX+N7lK8T7GFBmhmkQwEm5AkCJD/LmSqtOiG5Y=
+  email:
+    recipients:
+    - patrique.legault@uottawa.ca
+env:
+  global:
+  - secure: jZ1w0YrMNXMYJu2HZf/l+2/Leg0dQEd9soEeBPpwGP2LSZX6/tXy+4D8X9Owl9Fd1JBmvApPgaAAgJF9Vxcv4ntg5b/ac2g6k0xndbxq1/3SiCZ6yWB8mlosMzOzfwIOoqBY2RmWOdYthCGYt+Wsx+zCbm+1nIZ8JAj0pqyZOt5xU0uK4aOIxgHo8kL2/NXCsnxIdVCwe3t/XcUMYNPB6eOoaul2SieCoK8T/PAO5ud7ZPeJVduVGejMtHzht1DEQewT8S1L3MMoKJhNk8vt2Dpc3ITMI27JL1X6mgkDSdoU2lk0o/yXH5NomvA/9eSkrUc3ESHejS6Gq/u/qx9TZTRfVXNAWodFJkaHJzbGsemIFyKHT6Yly/Ll+gnjb4gMheT3FnZ6KFFIbg9xUUwfDthsRYVXz7nVvgfyHt7gtmDd+ota/ThZb0UyettCDgMrKc06X7HMsugcX07HP2881XfIJ+QUO9+8R91DCZNqsJNrLFp7rBn/SPCKD1hMuoRUmPxXsrlZntQ5IqQOacxdeCr6taNxtkwzggntrj4T4yS3n1lpgwMVeXp1BD0xkRIdkTga/sPNYQfG+55g3tPHQkAfANDVOF6RZkH5qxyBMS+n1rqhGbZOs/ciFkbpD2urTTzMax3QC0P82tTaZhUayM69m2D7iyFIt0ZgqnwPPWA=
