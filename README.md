@@ -17,10 +17,10 @@ NPM
 
 The request parameter has the following format:
 ```
-"dates": "2019-10-10,2019-02-05","2020-01-01" (comma separated string of dates)
+?dates="2019-10-10,2019-02-05,2020-01-01" (comma separated string of dates)
 ```
 
-Your response should have the following format: 
+Your response json should have the following format: 
 ```
 {
 timeline: [
