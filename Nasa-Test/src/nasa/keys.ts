@@ -1,3 +1,3 @@
 export class Keys {
-    public static apiKey: string = undefined;
+    public static apiKey: string = "asdf";
 }
