@@ -42,6 +42,11 @@ export class Images {
 
     }
 
+    /**
+    @param date as string
+    @return promise string for parsed data from providing each date
+
+    */
     public async getImageForDate(date: string): Promise<string> {
 
         try {
